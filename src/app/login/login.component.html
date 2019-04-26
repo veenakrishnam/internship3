@@ -1,0 +1,34 @@
+<!DOCTYPE html>  
+<html lang="en">  
+  <head>  
+     <title>Login</title>  
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"/>  
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>  
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  </head>  
+  <body>  
+  
+<div class="container">  
+  <h1>LOGIN HERE</h1>  
+  
+<form style="width:300px" (ngSubmit)="login(f)" #f="ngForm">  
+  <div class="form-group">  
+    <label for="email">Email address</label>  
+    <input type="text" name="email" [(ngModel)]="email" placeholder="EMail" class="form-control">  
+
+  </div> 
+  <div class="form-group">  
+      <label for="password">Password</label>  
+      <input type="password" name="password" [(ngModel)]="password" placeholder="Password" class="form-control">  
+  
+    </div> 
+    <div class="form-group">
+      <input type="submit" class="btn btn-success" value="LOGIN"><h3>Not registered yet?<a routerLink="/register">Click here</a></h3>
+    </div>
+</form>  
+  
+</div>  
+  
+  
+  </body>  
+</html>  
